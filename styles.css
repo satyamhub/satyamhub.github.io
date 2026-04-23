@@ -1080,3 +1080,16 @@ main {
     gap: 12px;
   }
 }
+
+
+/* User DEFINED */
+::selection {
+  background-color: #ffcc00; /* Yellow background */
+  color: #000000;            /* Black text */
+}
+
+/* Required for Firefox support */
+::-moz-selection {
+  background-color: #ffcc00;
+  color: #000000;
+}
