@@ -678,6 +678,7 @@ main {
 }
 
 .project-card {
+  margin: 50px;
   display: grid;
   grid-template-columns: minmax(220px, 34%) 1fr;
   gap: 26px;
