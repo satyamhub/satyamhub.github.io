@@ -695,6 +695,11 @@ main {
   transition: all 0.3s var(--timing);
 }
 
+.project-card.no-shot,
+.project-card:not(:has(.project-shot)) {
+  display: block;
+}
+
 .project-card:hover {
   border-color: rgba(34, 211, 238, 0.4);
   background: linear-gradient(
