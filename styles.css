@@ -722,6 +722,20 @@ main {
   transition: all 0.3s var(--timing);
 }
 
+.project-shot.contain,
+.project-shot.mobile-shot {
+  width: auto;
+  max-width: 100%;
+  max-height: 290px;
+  height: auto;
+  object-fit: contain;
+  justify-self: center;
+  align-self: center;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.4);
+}
+
 .project-card:hover .project-shot {
   box-shadow: 0 24px 60px rgba(34, 211, 238, 0.2);
 }
@@ -1057,6 +1071,12 @@ main {
   .project-shot {
     width: 100%;
     height: auto;
+  }
+  .project-shot.contain,
+  .project-shot.mobile-shot {
+    max-height: 360px;
+    width: auto;
+    margin: 0 auto;
   }
 }
 
